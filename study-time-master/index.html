@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Study Time</title>
+</head>
+<body>
+    <div class="app">
+        <div class="vid-container">
+            <video Loop>
+               <source src="./video/forest.mp4" type="video/mp4"> 
+            </video>
+        </div>
+
+        <div class="time-select">
+            <button data-time="1500" data-button="300">25 work, 5 break</button>
+            <button data-time="2700" data-button="900">45 work, 15 break</button>
+            <button data-time="5400" data-button="1200">90 work, 20 break</button>
+        </div>
+
+        <div class="player-container">
+            <audio class="song">
+                <source src="./sounds/Light.mp3">
+            </audio>
+            <img src="./svg/play.svg" alt="play" class="play">
+            <svg class="track-outline"
+            width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+                </svg>
+            <svg class="moving-outline"
+            width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+                </svg>
+        <h3 class="time-display">0:00</h1>                                 
+        </div>
+        
+        <div class="sound-picker">
+            <button data-sound="./sounds/Light.mp3" data-video="./video/forest.mp4"><img src="./svg/nature.svg" alt="nature"> </button>
+            <button data-sound="./sounds/Moment.mp3" data-video="./video/ice.mp4"><img src="./svg/mountain.svg" alt="mountain"></button>
+            <button data-sound="./sounds/Time.mp3" data-video="./video/lake.mp4"><img src="./svg/spa.svg" alt="spa"></button>
+            <button data-sound="./sounds/Morning.mp3" data-video="./video/water.mp4"><img src="./svg/waves.svg" alt="waves"></button>
+        </div>
+        
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
